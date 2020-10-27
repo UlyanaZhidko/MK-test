@@ -1,0 +1,262 @@
+*, *::before, *::after {
+    outline: none;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+body {
+    height: 100%;
+    background: #dddddd;
+    /*  */
+}
+
+html {
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1170px;
+    width: 100%;
+    margin: auto;
+}
+
+.header {
+    height: 150px;
+    padding-top: 15px;
+}
+
+.container {
+    max-width: 1170px;
+    width: 100%;
+    margin: auto;
+}
+
+.header {
+    height: 150px;
+    background: #fff;
+}
+
+.header-info-top {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.header-language {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-language-title {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 125%;
+    color: rgba(0, 0, 0, 0.8);
+    margin-right: 13px;
+}
+
+.header-language-select {
+    position: relative;
+}
+
+.header-language-select select {
+    display: block;
+    width: 100%;
+    padding-right: 17px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url('/img/icons/selection.svg') no-repeat right;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 125%;
+    color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+}
+
+.header-contacts {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-contacts-phone {
+    font-family: 'Commissioner', sans-serif;
+    font-size: 14px;
+    line-height: 143%;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.header-contacts-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 14px;
+}
+
+.icon {
+    margin-right: 11px;
+}
+
+.icon:last-child {
+    margin-right: 0;
+}
+
+.heder-vision {
+    cursor: pointer;
+}
+
+.header-info, .header-info-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header-menu-link {
+    text-decoration: none;
+    margin-right: 50px;
+    font-family: 'Commissioner', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 143%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.search-button {
+    background: none;
+    cursor: pointer;
+}
+
+.photo-slider {
+    max-width: 1920px;
+    width: 100%;
+    margin: auto;
+    height: 650px;
+    height: 100%;
+}
+
+.slick-arrow {
+    border: none;
+    background: none;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    z-index: 100;
+}
+
+.slick-prev {
+    left: 400px;
+    top: 511px;
+}
+
+.slick-next {
+    left: 460px;
+    top: 511px;
+}
+
+.photo-slider-info {
+    position: absolute;
+    width: 500px;
+    margin-left: 375px;
+    margin-top: 160px;
+}
+
+.photo-slider-title {
+    font-family: 'Commissioner', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 125%;
+    letter-spacing: 0.01em;
+    color: rgba(0, 0, 0, 0.9);
+    margin-bottom: 20px;
+}
+
+.photo-slider-text {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 167%;
+    color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 50px;
+}
+
+.photo-slider-button {
+    width: 200px;
+    height: 45px;
+    background: #DEC377;
+    border-radius: 2px;
+    font-family: 'Commissioner', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 231%;
+    text-align: center;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.cards {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+    top: -90px;
+}
+
+.advantage-card {
+    background: #FFFFFF;
+    margin-bottom: 30px;
+    width: 270px;
+    height: 285px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+    margin: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.advantage-card-icon {
+    width: 120px;
+    height: 120px;
+}
+
+.advantage-card-text {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 156%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: rgba(0, 0, 0, 0.75);
+    margin-top: 25px;
+    width: 230px;
+}
