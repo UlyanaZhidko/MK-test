@@ -57,7 +57,7 @@ html {
     font-weight: 300;
     font-size: 16px;
     line-height: 125%;
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.6);
     margin-right: 13px;
 }
 
@@ -72,12 +72,12 @@ html {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    background: url('/img/icons/selection.svg') no-repeat right;
+    background: url('../img/icons/selection.svg') no-repeat right;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: normal;
     font-size: 16px;
     line-height: 125%;
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.6);
     cursor: pointer;
 }
 
