@@ -11,11 +11,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700;800&display=swap" rel="stylesheet">
 
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+
     <link rel="stylesheet" href="css/slick.css">
 </head>
 
 <body>
-
     <header class="header">
         <div class="container">
             <div class="header-info-top">
@@ -88,7 +91,7 @@
                     <p class="photo-slider-text">
                         Индивидуальный подход и нацеленность на достижение результата
                     </p>
-                    <button class="photo-slider-button">Подробнее</button>
+                    <button class="photo-slider-button button">Подробнее</button>
                 </div>
                 <img class="photo-slider-img" src="img/main/slider1.jpg" alt="">
             </div>
@@ -100,7 +103,7 @@
                     <p class="photo-slider-text">
                         Гарантируем минимальные сроки регистрации под ключ
                     </p>
-                    <button class="photo-slider-button">Подробнее</button>
+                    <button class="photo-slider-button button">Подробнее</button>
                 </div>
                 <img class="photo-slider-img" src="img/main/slider2.jpg" alt="photo-slider-1">
             </div>
@@ -112,7 +115,7 @@
                     <p class="photo-slider-text">
                         Эффективное решение сложных задач
                     </p>
-                    <button class="photo-slider-button">Подробнее</button>
+                    <button class="photo-slider-button button">Подробнее</button>
                 </div>
                 <img class="photo-slider-img" src="img/main/slider3.jpg" alt="photo-slider-2">
             </div>
@@ -124,7 +127,7 @@
                     <p class="photo-slider-text">
                         Детальные разъяснения вопросов по ведению бизнеса от профессионалов
                     </p>
-                    <button class="photo-slider-button">Подробнее</button>
+                    <button class="photo-slider-button button">Подробнее</button>
                 </div>
                 <img class="photo-slider-img" src="img/main/slider4.jpg" alt="photo-slider-3">
             </div>
@@ -136,7 +139,7 @@
                     <p class="photo-slider-text">
                         Гарантия своевременности и качества услуг
                     </p>
-                    <button class="photo-slider-button">Подробнее</button>
+                    <button class="photo-slider-button button">Подробнее</button>
                 </div>
                 <img class="photo-slider-img" src="img/main/slider5.jpg" alt="photo-slider-4">
             </div>
@@ -148,7 +151,7 @@
 
     <section class="advantages">
         <div class="container">
-            <div class="cards">
+            <div class="advantages-cards">
                 <div class="advantage-card">
                     <svg class="advantage-card-icon">
                         <use xlink:href="img/icons.svg#advantage-card-icon1"></use>
@@ -173,10 +176,263 @@
                     </svg>
                     <p class="advantage-card-text">Абсолютная конфиденциальность</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="introducrion">
+        <div class="container">
+            <div class="introduction-filling">
+                <div class="introdaction-description">
+                    <h1 class="introducrion-title">Юридическое сопровождение бизнеса
+                        от «МК-Правовые технологии»</h1>
+                    <p class="introducrion-text">
+                        Главный принцип нашей работы - качество. Постоянно следовать ему помогает сплоченная команда
+                        талантливых и энергичных сотрудников, способных сообща заниматься сложными проектами, никогда не допуская сбоев в
+                        работе.
+                    </p>
+                    <p class="introducrion-text">
+                        Мы обеспечиваем максимальный уровень профессионального обслуживания, который можно ожидать от крупной юридической
+                        фирмы.
+                    </p>
+                    <p class="introducrion-text">
+                        Нашу фирму отличают яркая индивидуальность и следование модели эффективного юридического обслуживания. Благодаря
+                        профессиональной гибкости мы находим творческие решения как обычных вопросов, так и неординарных проблем,
+                        возникающих у
+                        наших клиентов.
+                    </p>
+                    <p class="introducrion-text">
+                        Все наши рекомендации основаны на глубоких академических знаниях и опыте практического применения в хозяйственном
+                        праве.
+                    </p>
+                </div>
+                <img src="img/introducrion.jpg" alt="additional img: stairs">
+            </div>
+        </div>
+    </section>
+
+    <section class="main-activities">
+        <div class="container">
+            <h1 class="main-activities-title">Основные направления деятельности</h1>
+            <div class="main-activities-cards">
+                <div class="main-activities-card">
+                    <div class="main-activities-card-description">
+                        <p class="main-activities-card-text">Взыскание долгов</p>
+                        <button class="main-activities-card-button">Подробнее</button>
+                    </div>
+                    <svg class="main-activities-card-icon">
+                        <use xlink:href="img/icons.svg#activities1"></use>
+                    </svg>
+                </div>
+                <div class="main-activities-card">
+                    <div class="main-activities-card-description">
+                        <p class="main-activities-card-text">Взыскание долгов</p>
+                        <button class="main-activities-card-button">Подробнее</button>
+                    </div>
+                    <svg class="main-activities-card-icon">
+                        <use xlink:href="img/icons.svg#activities2"></use>
+                    </svg>
+                </div>
+                <div class="main-activities-card">
+                    <div class="main-activities-card-description">
+                        <p class="main-activities-card-text">Взыскание долгов</p>
+                        <button class="main-activities-card-button">Подробнее</button>
+                    </div>
+                    <svg class="main-activities-card-icon">
+                        <use xlink:href="img/icons.svg#activities3"></use>
+                    </svg>
+                </div>
+                <div class="main-activities-card">
+                    <div class="main-activities-card-description">
+                        <p class="main-activities-card-text">Взыскание долгов</p>
+                        <button class="main-activities-card-button">Подробнее</button>
+                    </div>
+                    <svg class="main-activities-card-icon">
+                        <use xlink:href="img/icons.svg#activities4"></use>
+                    </svg>
+                </div>
+                <div class="main-activities-card">
+                    <div class="main-activities-card-description">
+                        <p class="main-activities-card-text">Взыскание долгов</p>
+                        <button class="main-activities-card-button">Подробнее</button>
+                    </div>
+                    <svg class="main-activities-card-icon">
+                        <use xlink:href="img/icons.svg#activities5"></use>
+                    </svg>
+                </div>
+                <div class="main-activities-card">
+                    <div class="main-activities-card-description">
+                        <p class="main-activities-card-text">Взыскание долгов</p>
+                        <button class="main-activities-card-button">Подробнее</button>
+                    </div>
+                    <svg class="main-activities-card-icon">
+                        <use xlink:href="img/icons.svg#activities6"></use>
+                    </svg>
+                </div>
+                <div class="main-activities-card">
+                    <div class="main-activities-card-description">
+                        <p class="main-activities-card-text">Взыскание долгов</p>
+                        <button class="main-activities-card-button">Подробнее</button>
+                    </div>
+                    <svg class="main-activities-card-icon">
+                        <use xlink:href="img/icons.svg#activities7"></use>
+                    </svg>
+                </div>
+                <div class="main-activities-card">
+                    <div class="main-activities-card-description">
+                        <p class="main-activities-card-text">Взыскание долгов</p>
+                        <button class="main-activities-card-button">Подробнее</button>
+                    </div>
+                    <svg class="main-activities-card-icon">
+                        <use xlink:href="img/icons.svg#activities8"></use>
+                    </svg>
+                </div>
+                <div class="main-activities-card">
+                    <div class="main-activities-card-description">
+                        <p class="main-activities-card-text">Взыскание долгов</p>
+                        <button class="main-activities-card-button">Подробнее</button>
+                    </div>
+                    <svg class="main-activities-card-icon">
+                        <use xlink:href="img/icons.svg#activities9"></use>
+                    </svg>
+                </div>
+            </div>
+            <button class="main-activities-button button">Все услуги</button>
+        </div>
+    </section>
+
+    <section class="main-principles">
+        <div class="container">
+            <div class="main-principles-content">
+                <h1 class="main-principles-title">Основные направления деятельности</h1>
+                <div class="main-principles-description">
+                    <p class="main-principles-text">
+                        Основной принцип нашей работы – максимальная открытость и доверительные отношения с каждым клиентом, с тем чтобы от
+                        начала и до конца совместной работы, не возникало никакого недопонимания. Мы ставим целью не только привлечение
+                        новых клиентов, но и поддержание длительных партнерских отношений с клиентами, которые уже воспользовались нашими
+                        услугами.
+                    </p>
+                    <p class="main-principles-text">
+                        Быстрота анализа и профессиональных действий наших юристов обеспечивают успешное решение, казалось бы, неразрешимых
+                        вопросов. Богатые знания и солидный опыт позволяют нам оказывать комплексную правовую помощь в ситуациях любой
+                        сложности.
+                    </p>
+                </div>
+            </div>
+
+            <div class="main-principles-photo-slider">
+                <img class="photo-img" src="img/principles/principles1.jpg" alt="photo-slider-1">
+                <img class="photo-img" src="img/principles/principles2.jpg" alt="photo-slider-2d">
+                <img class="photo-img" src="img/principles/principles3.jpg" alt="photo-slider-3">
+                <img class="photo-img" src="img/principles/principles4.jpg" alt="photo-slider-4">
+                <img class="photo-img" src="img/principles/principles5.jpg" alt="photo-slider-5">
+            </div>
+
+        </div>
+    </section>
+
+    <section class="reviews">
+
+        <div class="container">
+            <h1 class="reviews-title">Отзывы наших партнеров</h1>
+            <div class="reviews-cards-slider">
+
+                <div class="reviews-card">
+                    <div class="reviews-card-content">
+                        <img class="reviews-card-img" src="img/reviews.jpg" alt="reviews-slider-1">
+                        <div class="reviews-card-description">
+                            <span class="reviews-card-position">директор</span>
+                            <h3 class="reviews-card-autor">С.В. Косачев</h3>
+                            <p class="reviews-card-text">
+                                Уважаемая Светлана Александровна! Наша компания выражает благодарность и признательность обществу с
+                                ограниченной ответственностью «МК-Правовые технологии». Благодаря слаженной работе и высокой
+                                квалификации
+                                Ваших
+                                сотрудников и специалистов компания «ВиваСтрой» получила качественные юридические услуги по взысканию
+                                денежных
+                                средств с должника. Профессионализм работников ООО «МК-Правовые технологии», а также желание работать со
+                                сложными и нестандартными задачами является залогом высокоэффективного и успешного взаимодействия наших
+                                компаний. Рекомендуем...
+                            </p>
+                            <button class="reviews-card-button">Читать далее</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews-card">
+                    <div class="reviews-card-content">
+                        <img class="reviews-card-img" src="img/reviews.jpg" alt="reviews-slider-1">
+                        <div class="reviews-card-description">
+                            <span class="reviews-card-position">глава представительства</span>
+                            <h3 class="reviews-card-autor">Валерий Мяснянкин</h3>
+                            <p class="reviews-card-text">
+                                Представительство корпорации «VMSN GROUP, INC.» (США) в Республике Беларусь на протяжении нескольких лет
+                                сотрудничает с ООО «МК-Правовые технологии» в рамках сопровождения деятельности по юридическим вопросам,
+                                в
+                                том числе по вопросам ведения кадрового делопроизводства – абонентское обслуживание. Хотелось бы
+                                отметить
+                                работу
+                                специалистов ООО «МК-Правовые технологии» хорошими теплыми словами: надёжные, обязательные,
+                                пунктуальные.
+                                Вопросы любой сложности им по плечу. Работая с профессионалами МК-Правовые технологии, всегда можно
+                                рассчитывать...
+                            </p>
+                            <button class="reviews-card-button">Читать далее</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews-card">
+                    <div class="reviews-card-content">
+                        <img class="reviews-card-img" src="img/reviews.jpg" alt="reviews-slider-1">
+                        <div class="reviews-card-description">
+                            <span class="reviews-card-position">директор</span>
+                            <h3 class="reviews-card-autor">С.В. Косачев</h3>
+                            <p class="reviews-card-text">
+                                Уважаемая Светлана Александровна! Наша компания выражает благодарность и признательность обществу с
+                                ограниченной ответственностью «МК-Правовые технологии». Благодаря слаженной работе и высокой
+                                квалификации
+                                Ваших
+                                сотрудников и специалистов компания «ВиваСтрой» получила качественные юридические услуги по взысканию
+                                денежных
+                                средств с должника. Профессионализм работников ООО «МК-Правовые технологии», а также желание работать со
+                                сложными и нестандартными задачами является залогом высокоэффективного и успешного взаимодействия наших
+                                компаний. Рекомендуем...
+                            </p>
+                            <button class="reviews-card-button">Читать далее</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <button class="reviews-button button">Все отзывы</button>
+        </div>
+
+    </section>
+
+    <section class="client">
+        <div class="container">
+            <div class="client-content">
+                <div class="client-description">
+                    <p class="client-text">
+                        Оказываем юридические услуги юридическим лицам и индивидуальным предпринимателям. Специализируемся в области
+                        хозяйственного права, работаем на всей территории Республики Беларусь, а также за ее пределами, с бизнесом любого
+                        масштаба.
+                    </p>
+                    <button class="client-button">Наши партнеры</button>
+                </div>
+                <div class="partners">
+                    <img src="img/partners/bayarenda.png" alt="">
+                    <img src="img/partners/titan.png" alt="">
+                    <img src="img/partners/favorit.png" alt="">
+                    <img src="img/partners/ALFA.png" alt="">
+                    <img src="img/partners/lBA.png" alt="">
+                </div>
 
             </div>
         </div>
     </section>
+
+    <div class="bg"></div>
+
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
