@@ -29,8 +29,14 @@ $(function () {
         slidesToShow: 2,
         slidesToScroll: 1,
     });
-
-
-
-
 });
+
+
+
+//маска для ввода номера телефона
+var elements = document.getElementsByClassName('cooperation-form-input');
+for (var i = 0; i < elements.length; i++) {
+  new IMask(elements[i], {
+    mask: '+{375}(00)000-00-00',
+  });
+}

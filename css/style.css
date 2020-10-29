@@ -618,10 +618,10 @@ html {
     justify-content: space-between;
     filter: grayscale(100%);
     height: 80px;
-    margin-bottom: 100px;
+    margin-bottom: 180px;
 }
 
-.bg {
+.white-bg {
     background-color: #fff;
     max-width: 1920px;
     width: 100%;
@@ -631,9 +631,611 @@ html {
     top: 3310px;
     left: 0;
     right: 0;
+    margin-bottom: 80px;
 }
 
 .main-principles, .reviews, .client {
     z-index: 100;
     position: relative;
+}
+
+.info-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+.info-card {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    padding: 40px 50px 0;
+}
+
+.info-card:nth-child(1), .info-card:nth-child(2) {
+    flex-basis: 50%;
+    max-width: 570px;
+    width: 100%;
+    height: 305px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.block-triangle {
+    border-top: 100px solid #DEC377;
+    border-left: 100px solid transparent;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.info-card:nth-child(3) {
+    flex-basis: 100%;
+    width: 1170px;
+    height: 185px;
+    display: flex;
+}
+
+.info-card:nth-child(3) .info-card-title {
+    width: 320px;
+}
+
+.info-card:nth-child(3) .info-card-text {
+    width: 720px;
+}
+
+.info-card-title {
+    font-family: 'Commissioner', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 173%;
+    color: rgba(0, 0, 0, 0.9);
+    margin-bottom: 15px;
+}
+
+.info-card-text {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 167%;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.bg-img {
+    height: 180px;
+    margin-bottom: 80px;
+}
+
+.services-title {
+    font-family: 'Commissioner', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 143%;
+    letter-spacing: 0.03em;
+    color: rgba(0, 0, 0, 0.9);
+    margin-bottom: 35px;
+}
+
+.services-card-title {
+    font-family: 'Commissioner', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 150%;
+    color: rgba(0, 0, 0, 0.9);
+    margin: 25px 0 45px 100px;
+    max-width: 447px;
+}
+
+.services-card:nth-child(5) .services-card-title {
+    margin-bottom: 15px;
+}
+
+.services-card-button {
+    background-color: transparent;
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 167%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.5);
+    float: right;
+    margin-right: 30px;
+}
+
+.services-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.services-card {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+    height: 140px;
+}
+
+.services-card:nth-child(1), .services-card:nth-child(9), .services-card:nth-child(6) {
+    width: 470px;
+}
+
+.services-card:nth-child(2), .services-card:nth-child(5), .services-card:nth-child(10) {
+    width: 670px;
+}
+
+.services-card:nth-child(3), .services-card:nth-child(4), .services-card:nth-child(7), .services-card:nth-child(8) {
+    width: 570px;
+}
+
+.rectangle {
+    position: absolute;
+    width: 70px;
+    height: 140px;
+}
+
+.services-card:nth-child(1) .rectangle, .services-card:nth-child(2) .rectangle, .services-card:nth-child(9) .rectangle, .services-card:nth-child(10) .rectangle {
+    background: rgba(222, 195, 119, 0.4);
+}
+
+.services-card:nth-child(3) .rectangle, .services-card:nth-child(4) .rectangle, .services-card:nth-child(7) .rectangle, .services-card:nth-child(8) .rectangle {
+    background: rgba(222, 195, 119, 0.75);
+}
+
+.services-card:nth-child(5) .rectangle, .services-card:nth-child(6) .rectangle {
+    background: #DEC377;
+}
+
+.services-text {
+    max-width: 760px;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 167%;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.services-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    margin-top: 20px;
+}
+
+.trust {
+    background: #fff;
+    height: 790px;
+    padding-top: 80px;
+    margin-bottom: 80px;
+}
+
+.trust-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.trust-content-title {
+    font-family: 'Commissioner', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 143%;
+    letter-spacing: 0.03em;
+    color: rgba(0, 0, 0, 0.9);
+    margin-bottom: 30px;
+}
+
+.trust-content-text {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 167%;
+    color: rgba(0, 0, 0, 0.8);
+    max-width: 470px;
+    width: 100%;
+}
+
+.list-item {
+    margin-left: 70px;
+    margin-top: -40px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 176%;
+    letter-spacing: 0.01em;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.trust-content-list ul {
+    list-style: url('../img/list.svg');
+    list-style-position: inside;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    max-width: 440px;
+    height: 255px;
+}
+
+.line {
+    width: 1170px;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.1);
+    transform: matrix(1, 0, 0, -1, 0, 0);
+    margin: 60px auto;
+}
+
+.pluses-cards {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.pluses-card {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 5px;
+    width: 270px;
+    height: 335px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pluses-card-icon {
+    width: 120px;
+    height: 120px;
+}
+
+.pluses-card-text {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 156%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: rgba(0, 0, 0, 0.75);
+    margin-top: 25px;
+    width: 230px;
+}
+
+.plases-content {
+    width: 1170px;
+    height: 160px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+    padding-top: 40px;
+    padding-left: 50px;
+    margin-bottom: 100px;
+    margin-bottom: 100px;
+}
+
+.pluses-content-text {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 167%;
+    width: 750px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.plases-block-triangle {
+    border-top: 100px solid #DEC377;
+    border-left: 100px solid transparent;
+    position: absolute;
+    top: 8039.85px;
+    left: 1244.6px;
+    width: 0;
+    height: 0;
+}
+
+.cooperation-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cooperation-org-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.cooperation-org-title {
+    font-family: 'Commissioner', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 143%;
+    letter-spacing: 0.03em;
+    color: rgba(0, 0, 0, 0.9);
+    margin-bottom: 35px;
+}
+
+.cooperation-org-icon {
+    width: 70px;
+    height: 70px;
+    margin-right: 30px;
+}
+
+.cooperation-org-item-text {
+    width: 400px;
+    height: 75px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 167%;
+    display: flex;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.cooperation-org-text {
+    width: 500px;
+    height: 75px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 179%;
+    letter-spacing: 0.01em;
+    color: rgba(0, 0, 0, 0.8);
+    margin-top: 5px;
+}
+
+.cooperation-info-form {
+    max-width: 570px;
+    width: 100%;
+    height: 365px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+    padding: 40px 50px 50px;
+}
+
+.cooperation-form-title {
+    font-family: 'Commissioner', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 154%;
+    letter-spacing: 0.01em;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 5px;
+}
+
+.cooperation-form-input {
+    background-color: transparent;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 8px;
+}
+
+.cooperation-form-input::placeholder {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 167%;
+    color: rgba(0, 0, 0, 0.5);
+    opacity: 0.6;
+}
+
+.cooperation-form {
+    display: flex;
+    flex-direction: column;
+    width: 470px;
+    height: 257px;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.cooperation-form-button {
+    width: 470px;
+    height: 45px;
+    background: #DEC377;
+    border-radius: 2px;
+    font-family: 'Commissioner', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 231%;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.politics {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 154%;
+    color: rgba(0, 0, 0, 0.5);
+    width: 470px;
+    margin-bottom: 30px;
+}
+
+.politics-link {
+    font-weight: bold;
+    text-decoration-line: underline;
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.cost-content {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.cost-content-title {
+    font-family: 'Commissioner', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 143%;
+    letter-spacing: 0.03em;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.cost-content-text {
+    width: 670px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 167%;
+    color: rgba(0, 0, 0, 0.8);
+    margin: 30px 0;
+}
+
+.footer {
+    height: 705px;
+    border: 2px solid red;
+}
+
+.footer-items {
+    display: flex;
+}
+
+.footer-items-title {
+    width: 270px;
+    font-family: 'Commissioner', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 150%;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.footer-item-description-title {
+    font-family: 'Commissioner', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 154%;
+    letter-spacing: 0.01em;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.footer-item-description-content {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 154%;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.footer-button {
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 167%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.75);
+    background: transparent;
+}
+
+.social-links-icon {
+    width: 27px;
+    height: 27px;
+}
+
+.social-link {
+    text-decoration: none;
+}
+
+.footer-line {
+    width: 60px;
+    height: 12px;
+}
+
+.footer-items-title {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 167%;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.footer-item-line {
+    width: 640px;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.1);
+    opacity: 0.7;
+}
+
+.footer-item-title {
+    font-family: 'Commissioner', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 179%;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.footer-item-link {
+    text-decoration: none;
+}
+
+.footer-item-list {
+    list-style: none;
+}
+
+.footer-adress-title {
+    font-family: 'Commissioner', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 154%;
+    letter-spacing: 0.01em;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.footer-adress-text {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 154%;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.footer-adress-email {
+    text-decoration: none;
+    font-family: 'Commissioner', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 154%;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.footer-item-offices {
+    display: flex;
 }
