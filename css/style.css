@@ -1,3 +1,24 @@
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Light'), local('Lato-Light'), url('../fonts/lato/latolight.woff2') format('woff2'), url('../fonts/lato/latolight.woff') format('woff'), url('../fonts/lato/latolight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Regular'), local('Lato-Regular'), url('../fonts/lato/latoregular.woff2') format('woff2'), url('../fonts/lato/latoregular.woff') format('woff'), url('../fonts/lato/latoregular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Heavy'), local('Lato-Heavy'), url('../fonts/lato/latoheavy.woff2') format('woff2'), url('../fonts/lato/latoheavy.woff') format('woff'), url('../fonts/lato/latoheavy.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
 *, *::before, *::after {
     outline: none;
     box-sizing: border-box;
@@ -31,6 +52,44 @@ html {
     width: 100%;
     margin: auto;
 }
+
+.title {
+    font-family: 'Commissioner', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 143%;
+    letter-spacing: 0.03em;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.text {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 167%;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.button {
+    width: 200px;
+    height: 45px;
+    background: #DEC377;
+    border-radius: 2px;
+    font-family: 'Commissioner', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 231%;
+    text-align: center;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+/* header */
 
 .header {
     height: 150px;
@@ -131,8 +190,6 @@ html {
 }
 
 .header-menu-link {
-    text-decoration: none;
-    margin-right: 50px;
     font-family: 'Commissioner', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -141,6 +198,8 @@ html {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: rgba(0, 0, 0, 0.75);
+    text-decoration: none;
+    margin-right: 50px;
 }
 
 .search-button {
@@ -169,17 +228,16 @@ html {
 
 .slick-prev {
     left: 400px;
-    top: 511px;
+    top: 490px;
 }
 
 .slick-next {
     left: 460px;
-    top: 511px;
+    top: 490px;
 }
 
 .photo-slider-info {
     position: absolute;
-    width: 500px;
     margin-left: 375px;
     margin-top: 160px;
 }
@@ -193,34 +251,15 @@ html {
     letter-spacing: 0.01em;
     color: rgba(0, 0, 0, 0.9);
     margin-bottom: 20px;
+    width: 570px;
 }
 
 .photo-slider-text {
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 167%;
-    color: rgba(0, 0, 0, 0.8);
     margin-bottom: 50px;
+    width: 500px;
 }
 
-.button {
-    width: 200px;
-    height: 45px;
-    background: #DEC377;
-    border-radius: 2px;
-    font-family: 'Commissioner', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 13px;
-    line-height: 231%;
-    text-align: center;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    cursor: pointer;
-}
+/*  advantages */
 
 .advantages {
     top: -90px;
@@ -233,11 +272,11 @@ html {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .advantage-card {
     background: #FFFFFF;
-    margin-bottom: 30px;
     width: 270px;
     height: 285px;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
@@ -278,30 +317,19 @@ html {
     margin-bottom: 100px;
 }
 
+/* introducrion */
+
 .introdaction-description {
     margin-left: 70px;
 }
 
 .introducrion-title {
-    font-family: 'Commissioner', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 28px;
-    line-height: 143%;
-    letter-spacing: 0.03em;
-    color: rgba(0, 0, 0, 0.9);
     max-width: 540px;
     width: 100%;
     margin-top: 50px;
 }
 
 .introducrion-text {
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 167%;
-    color: rgba(0, 0, 0, 0.8);
     max-width: 470px;
     width: 100%;
     margin-top: 30px;
@@ -316,13 +344,6 @@ html {
 
 .main-activities-title {
     margin-bottom: 35px;
-    font-family: 'Commissioner', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 28px;
-    line-height: 143%;
-    letter-spacing: 0.03em;
-    color: rgba(0, 0, 0, 0.9);
 }
 
 .main-activities-card {
@@ -383,24 +404,11 @@ html {
 }
 
 .main-principles-title {
-    font-family: 'Commissioner', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 28px;
-    line-height: 143%;
-    letter-spacing: 0.03em;
-    color: rgba(0, 0, 0, 0.9);
     max-width: 370px;
     width: 100%;
 }
 
 .main-principles-text {
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 167%;
-    color: rgba(0, 0, 0, 0.8);
     max-width: 770px;
     width: 100%;
     margin-bottom: 30px;
@@ -418,26 +426,23 @@ html {
 
 .slider-prev.slick-arrow {
     width: 100px;
-    height: 560px;
+    height: 100%;
     left: -100px;
     top: 0;
 }
 
 .slider-next.slick-arrow {
     width: 100px;
-    height: 560px;
+    height: 100%;
     right: -100px;
     top: 0;
 }
 
+.slick-track {
+    height: 613px;
+}
+
 .reviews-title {
-    font-family: 'Commissioner', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 28px;
-    line-height: 143%;
-    letter-spacing: 0.03em;
-    color: rgba(0, 0, 0, 0.9);
     margin-bottom: 35px;
 }
 
@@ -446,6 +451,7 @@ html {
     max-width: 570px;
     max-height: 585px;
     margin-right: 30px;
+    margin-left: 15px;
 }
 
 .reviews-card-content {
@@ -514,7 +520,7 @@ html {
     padding: 0;
     list-style: none;
     text-align: center;
-    margin-top: 45px;
+    margin-top: 15px;
 }
 
 .slick-dots li {
@@ -574,7 +580,6 @@ html {
 }
 
 .reviews-button {
-    margin-top: 30px;
     margin-bottom: 100px;
 }
 
@@ -585,12 +590,6 @@ html {
 }
 
 .client-text {
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 167%;
-    color: rgba(0, 0, 0, 0.8);
     max-width: 670px;
     width: 100%;
 }
@@ -694,28 +693,12 @@ html {
     margin-bottom: 15px;
 }
 
-.info-card-text {
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 167%;
-    color: rgba(0, 0, 0, 0.8);
-}
-
 .bg-img {
     height: 180px;
     margin-bottom: 80px;
 }
 
 .services-title {
-    font-family: 'Commissioner', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 28px;
-    line-height: 143%;
-    letter-spacing: 0.03em;
-    color: rgba(0, 0, 0, 0.9);
     margin-bottom: 35px;
 }
 
@@ -795,12 +778,6 @@ html {
 .services-text {
     max-width: 760px;
     width: 100%;
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 167%;
-    color: rgba(0, 0, 0, 0.8);
 }
 
 .services-content {
@@ -823,23 +800,10 @@ html {
 }
 
 .trust-content-title {
-    font-family: 'Commissioner', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 28px;
-    line-height: 143%;
-    letter-spacing: 0.03em;
-    color: rgba(0, 0, 0, 0.9);
     margin-bottom: 30px;
 }
 
 .trust-content-text {
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 167%;
-    color: rgba(0, 0, 0, 0.8);
     max-width: 470px;
     width: 100%;
 }
@@ -880,6 +844,7 @@ html {
     align-items: flex-start;
     justify-content: space-between;
     margin-bottom: 40px;
+    flex-wrap: wrap;
 }
 
 .pluses-card {
@@ -899,6 +864,10 @@ html {
     height: 120px;
 }
 
+.pluses-content-title {
+    margin-bottom: 35px;
+}
+
 .pluses-card-text {
     font-family: 'Lato', sans-serif;
     font-style: normal;
@@ -913,32 +882,27 @@ html {
 }
 
 .plases-content {
-    width: 1170px;
+    max-width: 1170px;
     height: 160px;
     background: #FFFFFF;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
     padding-top: 40px;
     padding-left: 50px;
     margin-bottom: 100px;
-    margin-bottom: 100px;
+    position: relative;
+    width: 100%;
 }
 
 .pluses-content-text {
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 167%;
     width: 750px;
-    color: rgba(0, 0, 0, 0.8);
 }
 
 .plases-block-triangle {
     border-top: 100px solid #DEC377;
     border-left: 100px solid transparent;
     position: absolute;
-    top: 8039.85px;
-    left: 1244.6px;
+    top: 0;
+    right: 0;
     width: 0;
     height: 0;
 }
@@ -946,6 +910,7 @@ html {
 .cooperation-info {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .cooperation-org-item {
@@ -955,13 +920,6 @@ html {
 }
 
 .cooperation-org-title {
-    font-family: 'Commissioner', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 28px;
-    line-height: 143%;
-    letter-spacing: 0.03em;
-    color: rgba(0, 0, 0, 0.9);
     margin-bottom: 35px;
 }
 
@@ -1085,37 +1043,17 @@ html {
     margin-bottom: 100px;
 }
 
-.cost-content-title {
-    font-family: 'Commissioner', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 28px;
-    line-height: 143%;
-    letter-spacing: 0.03em;
-    color: rgba(0, 0, 0, 0.9);
-}
-
 .cost-content-text {
     width: 670px;
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 167%;
-    color: rgba(0, 0, 0, 0.8);
     margin: 30px 0;
 }
 
 .footer {
     height: 705px;
-    border: 2px solid red;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.footer-items {
-    display: flex;
-}
-
-.footer-items-title {
+.footer-title {
     width: 270px;
     font-family: 'Commissioner', sans-serif;
     font-style: normal;
@@ -1123,6 +1061,23 @@ html {
     font-size: 20px;
     line-height: 150%;
     color: rgba(0, 0, 0, 0.9);
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+
+.footer-items, .footer-item-description {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-item-company {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 255px;
+    width: 100%;
+    height: 410px;
+    margin-right: 45px;
 }
 
 .footer-item-description-title {
@@ -1133,6 +1088,7 @@ html {
     line-height: 154%;
     letter-spacing: 0.01em;
     color: rgba(0, 0, 0, 0.5);
+    margin-right: 15px;
 }
 
 .footer-item-description-content {
@@ -1155,11 +1111,18 @@ html {
     text-transform: uppercase;
     color: rgba(0, 0, 0, 0.75);
     background: transparent;
+    text-align: left;
+    margin-right: 15px;
 }
 
 .social-links-icon {
     width: 27px;
     height: 27px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-between;
 }
 
 .social-link {
@@ -1171,6 +1134,15 @@ html {
     height: 12px;
 }
 
+.offices {
+    display: flex;
+}
+
+.item-name {
+    display: flex;
+    flex-direction: column;
+}
+
 .footer-items-title {
     font-family: 'Lato', sans-serif;
     font-style: normal;
@@ -1179,6 +1151,8 @@ html {
     line-height: 167%;
     text-transform: uppercase;
     color: rgba(0, 0, 0, 0.5);
+    margin-top: 85px;
+    margin-bottom: 5px;
 }
 
 .footer-item-line {
@@ -1186,6 +1160,45 @@ html {
     height: 1px;
     background: rgba(0, 0, 0, 0.1);
     opacity: 0.7;
+    margin-bottom: 30px;
+}
+
+.footer-item-line-2 {
+    width: 170px;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.1);
+    opacity: 0.7;
+    margin-bottom: 30px;
+}
+
+.footer-item-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 35px;
+    max-width: 200px;
+    width: 100%;
+}
+
+.footer-item-content:nth-child(1) {
+    height: 310px;
+}
+
+.footer-item-content:nth-child(2) {
+    height: 445px;
+}
+
+.footer-item-content:nth-child(3) {
+    height: 285px;
+}
+
+.footer-item-time {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 275px;
+    max-width: 170px;
+    width: 100%;
 }
 
 .footer-item-title {
@@ -1238,4 +1251,196 @@ html {
 
 .footer-item-offices {
     display: flex;
+}
+
+.footer-copy {
+    margin-top: 60px;
+    height: 55px;
+    background: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 167%;
+    letter-spacing: 0.02em;
+    color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding-top: 17px;
+}
+
+@media (min-width: 1300px) {
+    .slick-prev, .slick-next {
+        top: 400px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .slick-prev {
+        left: 570px;
+        top: 440px;
+    }
+    .slick-next {
+        left: 660px;
+        top: 440px;
+    }
+    .photo-slider-info {
+        position: absolute;
+        margin-left: 105px;
+        margin-top: 160px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .slick-prev {
+        left: 0;
+    }
+    .slick-next {
+        right: 0;
+        margin-left: auto;
+    }
+    .container {
+        width: 95%;
+    }
+    .advantage-card {
+        flex: 0 1 0%;
+    }
+}
+
+@media (max-width: 1136px) {
+    .slick-prev, .slick-next {
+        top: 50%;
+    }
+    .container {
+        width: 90%;
+    }
+    .photo-slider-title {
+        font-size: 24px;
+    }
+    .photo-slider-info {
+        margin-top: 60px;
+    }
+    .advantages {
+        top: -200px;
+    }
+    .introduction-filling {
+        margin-top: -100px;
+    }
+    .title {
+        font-size: 21px;
+    }
+    .introducrion-text {
+        margin-top: 15px;
+    }
+    .slider-prev.slick-arrow {
+        left: 0px;
+        background: rgba(255, 255, 255, 0.3);
+    }
+    .slider-next.slick-arrow {
+        right: 0px;
+        background: rgba(255, 255, 255, 0.3);
+    }
+    .reviews-card-description {
+        padding: 30px;
+        margin: 0;
+    }
+    .reviews-card-autor {
+        font-size: 20px;
+    }
+    .partners {
+        margin-bottom: 100px;
+    }
+}
+
+@media (max-width: 1090px) {
+    .advantage-card {
+        flex: 0 1 34%;
+    }
+    .reviews-card-text {
+        padding: 0 30px 0 0;
+    }
+    .photo-slider-title {
+        width: 300px;
+    }
+    .info-card:nth-child(1), .info-card:nth-child(2) {
+        flex-basis: 100%;
+    }
+    .info-card:nth-child(3) {
+        padding: 50px;
+        flex-direction: column;
+        height: auto;
+    }
+    .info-cards {
+        justify-content: center;
+    }
+    .services-cards {
+        width: 470px;
+    }
+    .services-card-title {
+        font-size: 14px;
+        padding-right: 50px;
+    }
+    .services-card-button {
+        float: left;
+        margin-left: 100px;
+    }
+    .pluses-card {
+        margin-bottom: 20px;
+        flex-basis: 34%;
+    }
+    .pluses-cards {
+        justify-content: space-around;
+    }
+    .cooperation-info {
+        justify-content: center;
+    }
+    .cooperation-org-text {
+        margin-bottom: 10px;
+    }
+    .footer-item-company {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        margin-right: 45px;
+    }
+    .social-links {
+        display: flex;
+        justify-content: flex-start;
+    }
+    .footer-item-company-info {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .site-map {
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .reviews-card-text {
+        padding: 0 60px 0 0;
+    }
+}
+
+@media (max-width: 990px) {
+    .reviews-card {
+        max-width: 100%;
+    }
+    .reviews-card-description {
+        width: 100%;
+        margin: 40px auto auto auto;
+    }
+    .header {
+        height: 230px;
+    }
+    .header-info, .header-info-menu {
+        flex-direction: column;
+    }
+    .search-button {
+        margin-top: 20px;
+    }
 }
