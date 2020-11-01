@@ -14,7 +14,7 @@ $(function () {
     prevArrow: '<button type="button" class="slider-prev"><img src="img/left.svg" alt="arrow: prev"></button>',
     nextArrow: '<button type="button" class="slider-next"><img src="img/right.svg" alt="arrow: next"></button>',
 
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
   });
 
@@ -39,6 +39,24 @@ $(function () {
       },
     ]
   });
+
+
+
+
+  $('.menu-btn').on('click', function() {
+    $('.header-menu').toggle();
+});
+
+
+
+
+
+
+
+
+
+
+
 });
 
 
