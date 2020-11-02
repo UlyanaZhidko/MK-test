@@ -5,7 +5,7 @@ $(function () {
     prevArrow: '<button type="button" class="slick-prev"><img src="img/left.svg" alt="arrow: prev"></button>',
     nextArrow: '<button type="button" class="slick-next"><img src="img/right.svg" alt="arrow: next"></button>',
 
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
   });
 
@@ -43,13 +43,35 @@ $(function () {
 
 
 
-  $('.menu-btn').on('click', function() {
+  $('.menu-btn').on('click', function () {
     $('.header-menu').toggle();
+  });
+
+
+  /* скрывать офис в минске */
+  $('.footer-item-title-minsk').on('click', function () {
+    $('.footer-item-list-minsk, .footer-adress-minsk, .footer-phone-minsk').toggle();
+  });
+  /* скрывать офис в минске */
+  $('.footer-item-title-mogilev').on('click', function () {
+    $('.footer-adress-mogilev').toggle();
+  });
+  /* скрывать офис в минске */
+  $('.footer-item-title-brest').on('click', function () {
+    $('.footer-adress-brest').toggle();
+  });
+  /* скрывать офис в минске */
+  $('.footer-item-title-vitebsk').on('click', function () {
+    $('.footer-adress-vitebsk').toggle();
+  });
+  /* скрывать офис в минске */
+  $('.footer-item-title-grodno').on('click', function () {
+    $('.footer-adress-grodno').toggle();
+  });
+ /* скрывать офис в минске */
+ $('.footer-item-title-gomel').on('click', function () {
+  $('.footer-adress-gomel').toggle();
 });
-
-
-
-
 
 
 

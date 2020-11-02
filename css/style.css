@@ -445,14 +445,14 @@ html {
 .reviews-card {
     background-color: #FFFFFF;
     max-width: 570px;
-    max-height: 585px;
+    height: 585px;
     margin-right: 30px;
     margin-left: 15px;
 }
 
 .reviews-card-content {
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
-    height: 585px;
+    height: 100%;
 }
 
 .reviews-card-img {
@@ -892,6 +892,8 @@ html {
 
 .pluses-content-text {
     max-width: 750px;
+    z-index: 100;
+    position: relative;
 }
 
 .plases-block-triangle {
@@ -940,7 +942,7 @@ html {
 }
 
 .cooperation-org-text {
-    width: 500px;
+    max-width: 500px;
     height: 75px;
     font-family: 'Lato', sans-serif;
     font-style: normal;
@@ -1555,24 +1557,6 @@ html {
 }
 
 @media (max-width: 790px) {
-    /*  .header-menu {
-        display: flex;
-    } 
-    .menu-btn {
-        display: block;
-        width: 40px;
-        cursor: pointer;
-        position: relative;
-        right: 0;
-    }
-    .menu-btn span {
-        background-color: #ECB84C;
-        margin-bottom: 6px;
-        display: block;
-        cursor: pointer;
-        height: 3px;
-        width: 30px;
-    }*/
     .introdaction-description {
         margin-left: 30px;
     }
@@ -1637,5 +1621,369 @@ html {
     }
     .footer-title {
         font-size: 16px;
+    }
+    .header-contacts {
+        align-items: center;
+        flex-direction: column;
+    }
+    .header-contacts-phone {
+        font-size: 12px;
+    }
+    .header-language-title, .header-language-select select {
+        font-size: 14px;
+    }
+    .header-info-top {
+        margin-bottom: 0px;
+    }
+    .photo-slider-text {
+        width: 238px;
+    }
+    .photo-slider-title {
+        margin-bottom: 5px;
+    }
+    .button {
+        width: 100px;
+        height: 32px;
+        font-size: 10px;
+    }
+    .footer-item-list-minsk, .footer-adress-minsk, .footer-phone-minsk, .footer-adress-mogilev, .footer-adress-brest, .footer-adress-vitebsk, .footer-adress-grodno, .footer-adress-gomel {
+        display: none;
+    }
+    .offices {
+        flex-direction: column;
+    }
+    .footer-item-content:nth-child(1), .footer-item-content:nth-child(2), .footer-item-content:nth-child(3) {
+        height: auto;
+    }
+    .footer-item-title {
+        cursor: pointer;
+    }
+    .footer-item-line {
+        width: auto;
+    }
+    .client-button {
+        font-size: 12px;
+        width: 145px;
+        height: 35px;
+    }
+    .reviews-button {
+        margin-bottom: 30px;
+    }
+    .partners-img {
+        width: 21%;
+        height: 114%;
+    }
+    .cooperation-form-button {
+        width: 350px;
+        margin: 0;
+    }
+    .politics, .cooperation-form-input {
+        width: 59%;
+    }
+    .cost-content {
+        margin: 50px auto;
+    }
+    .footer-item-time {
+        max-width: 100%;
+    }
+    .reviews-slick-prev, .reviews-slick-next {
+        margin-top: 0;
+    }
+    .reviews-card-text {
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 552px) {
+    .reviews-card-text {
+        font-size: 12px;
+    }
+    .header-contacts-icons, .icon-mts {
+        display: none;
+    }
+    .header-menu-link {
+        font-size: 11px;
+        margin-right: 20px;
+    }
+    .logo {
+        margin-bottom: 20px;
+    }
+    .photo-slider-title {
+        font-size: 14px;
+        width: 190px;
+    }
+    .text {
+        font-size: 12px;
+    }
+    .photo-slider-text {
+        max-width: 225px;
+    }
+    .photo-slider-info {
+        margin-left: 80px;
+        margin-top: 10px;
+    }
+    .advantage-card {
+        width: 230px;
+        height: 180px;
+        flex: 0 1 34%;
+    }
+    .advantage-card-text {
+        font-size: 12px;
+    }
+    .title {
+        font-size: 16px;
+    }
+    .introducrion-img {
+        display: none;
+    }
+    .introdaction-description {
+        margin-right: 30px;
+    }
+    .introduction-filling {
+        margin-bottom: 50px;
+    }
+    .main-activities-card-text {
+        font-size: 16px;
+    }
+    .main-principles {
+        margin: 50px 0;
+    }
+    .reviews-card-autor {
+        font-size: 16px;
+    }
+    .reviews-card-description {
+        margin: 0;
+    }
+    .info-card-title {
+        font-size: 18px;
+    }
+    .info-card:nth-child(1), .info-card:nth-child(2), .info-card:nth-child(3) {
+        padding: 30px;
+    }
+    .info-cards {
+        margin-bottom: 50px;
+    }
+    .services-content {
+        margin-bottom: 50px;
+    }
+    .trust-item {
+        flex-direction: column;
+    }
+    .trust-content-list ul {
+        justify-content: space-around;
+        margin-bottom: 20px;
+    }
+    .trust {
+        height: auto;
+    }
+    .line {
+        width: auto;
+        margin: 20px 20px;
+    }
+    .pluses-card {
+        height: 243px;
+    }
+    .plases-content {
+        margin-bottom: 50px;
+    }
+    .cooperation-org-item-text {
+        font-size: 14px;
+    }
+    .cooperation-org-icon {
+        width: 50px;
+        height: 50px;
+        margin-right: 20px;
+    }
+    .footer-item-time, .footer-item-company-info {
+        flex-direction: column;
+    }
+    .footer-item-description {
+        margin-bottom: 5px;
+    }
+    .footer-items-title {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 476px) {
+    .header-info, .header-info-menu {
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .header-menu {
+        flex-direction: column;
+    }
+    .logo img {
+        width: 70%;
+    }
+    .search-button {
+        margin-top: 0px;
+    }
+    .logo {
+        margin-bottom: 0px;
+    }
+    .photo-slider-title {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    .photo-slider-text {
+        display: none;
+    }
+    .title {
+        font-size: 14px;
+    }
+    .main-principles-content {
+        flex-direction: column;
+    }
+    .main-principles-title, .main-principles-text {
+        margin-bottom: 20px;
+    }
+    .reviews-card-text {
+        font-size: 12px;
+        padding: 0 30px 0 0;
+    }
+    .slick-arrow {
+        width: 50px;
+        height: 30px;
+    }
+    .info-card-title {
+        font-size: 14px;
+    }
+    .services-cards {
+        max-width: 400px;
+        width: 90%;
+    }
+    .rectangle {
+        width: 25px;
+    }
+    .services-card-title, .services-card-button {
+        font-size: 12px;
+        margin-left: 50px;
+        padding-right: 15px;
+    }
+    .list-item {
+        margin-left: 50px;
+    }
+    .pluses-card {
+        justify-content: center;
+        height: 200px;
+    }
+    .plases-content {
+        height: auto;
+        padding: 20px 50px 20px 20px;
+    }
+    .pluses-content-text {
+        padding-right: 0;
+    }
+    .reviews-card-text {
+        padding: 0;
+    }
+    .partners {
+        display: none;
+    }
+    .cooperation-info {
+        flex-direction: column;
+    }
+    .cooperation-org-item {
+        margin-bottom: 0;
+        flex-direction: column;
+    }
+    .cooperation-org-item-text {
+        font-size: 12px;
+    }
+    .cooperation-org-icon {
+        width: 40px;
+        height: 40px;
+    }
+    .cooperation-form-button {
+        max-width: 210px;
+        font-size: 12px;
+    }
+    .footer-title {
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    .footer-items-title {
+        margin-top: 20px;
+        font-size: 12px;
+    }
+    .footer-item-title {
+        font-size: 12px;
+    }
+    .pluses-content-text {
+        padding-right: 24px;
+    }
+    .advantage-card {
+        flex: 0 1 46%;
+    }
+}
+
+@media (max-width: 408px) {
+    .photo-slider-info {
+        margin-left: 43px;
+        margin-top: 43px;
+    }
+    .slick-arrow {
+        width: 35px;
+        height: 35px;
+    }
+    .reviews-slick-next {
+        right: 0;
+    }
+    .reviews-slick-prev {
+        right: 50px;
+    }
+    .info-card:nth-child(2) {
+        padding-right: 53px;
+    }
+    .cooperation-org-item-text {
+        width: 90%;
+        text-align: center;
+    }
+    .cooperation-info-form {
+        padding: 20px;
+        height: auto;
+    }
+    .politics, .cooperation-form-input {
+        width: 50%;
+    }
+    .cooperation-form-input::placeholder {
+        font-size: 12px;
+    }
+    .reviews-slick-prev, .reviews-slick-next {
+        margin-top: 20px;
+    }
+    .reviews-card-description {
+        padding: 20px;
+    }
+    .reviews-card-autor {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    .reviews-card-text {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 345px) {
+    .advantage-card {
+        flex: 2 1 51%;
+    }
+    .photo-slider-info {
+        margin-top: 16px;
+    }
+    .button {
+        width: 85px;
+        height: 25px;
+        font-size: 9px;
+    }
+    .header-language-title, .header-language-select select {
+        font-size: 12px;
+        margin-right: 5px;
+    }
+    .icon-vision {
+        width: 21px;
+        height: 16px;
     }
 }
