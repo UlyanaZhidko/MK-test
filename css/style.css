@@ -323,6 +323,10 @@ body {
     max-height: 425px;
 }
 
+.main {
+    overflow-x: hidden;
+}
+
 .main-activities-cards {
     display: flex;
     justify-content: space-between;
